@@ -1,5 +1,7 @@
 package br.com.treinaweb.helloworld.principal;
 
+import br.com.treinaweb.escopo.EscopoDeVariavel;
+
 public class Principal {
 
 	public static void main(String[] args) {
@@ -9,5 +11,9 @@ public class Principal {
 		Comentário em bloco
 		Aceita múltiplas linhas
 		*/
+		
+		//chamando classe Escopo
+		EscopoDeVariavel calc = new EscopoDeVariavel();
+		System.out.println(calc.Somar());
 	}
 }
