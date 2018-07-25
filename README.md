@@ -6,6 +6,8 @@ Curso da [TreinaWeb](https://www.treinaweb.com.br/): Java Básico.
 
  - Fundamentos da linguagem Java;
  - Tipos de dados;
+![](https://lh3.googleusercontent.com/DIZb-4rICXxfCR_GmB4h-4b09bcvpMDfBkkQKjLdFu8InVaVKMnMmujdXFdMYLMNgYnird9vN3gg "Tipos de Variáveis")
+
  - Escopo da variável;
  - Variáveis marcadas como "final";
  - Interpolação de Strings;
