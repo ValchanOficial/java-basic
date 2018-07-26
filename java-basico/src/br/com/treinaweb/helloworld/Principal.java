@@ -1,4 +1,4 @@
-package br.com.treinaweb.helloworld.principal;
+package br.com.treinaweb.helloworld;
 
 import br.com.treinaweb.escopo.EscopoDeVariavel;
 
