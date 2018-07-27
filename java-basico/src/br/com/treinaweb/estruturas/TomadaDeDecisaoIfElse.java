@@ -27,5 +27,7 @@ public class TomadaDeDecisaoIfElse {
 		}else {
 			System.out.println("Opção inválida!");
 		}
+		leitor.close();
+		leitorString.close();
 	}
 }

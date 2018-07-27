@@ -26,5 +26,6 @@ public class TomadaDeDecisaoSwitch {
 		default:
 			System.out.println("Este número é alto.");
 		}
+		leitor.close();
 	}
 }
