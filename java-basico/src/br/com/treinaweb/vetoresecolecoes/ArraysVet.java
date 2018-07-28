@@ -3,7 +3,7 @@ package br.com.treinaweb.vetoresecolecoes;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class arrays {
+public class ArraysVet {
 
 	public static void main(String[] args) {
 		String[] nomeDosAmigos = new String[5];
