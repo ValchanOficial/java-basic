@@ -5,6 +5,7 @@ import br.com.treinaweb.classe.Classe; //classe importada
 public class Programa {
 
 	public static void main(String[] args) {
+
 		Classe cachorro = new Classe("Totó",5,"Cachorro"); //chamando classe
 		Classe.QUANTIDADE_ANIMAIS++;
 		//setando atributos
