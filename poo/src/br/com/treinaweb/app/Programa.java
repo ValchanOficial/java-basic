@@ -5,13 +5,10 @@ import br.com.treinaweb.classe.Classe; //classe importada
 public class Programa {
 
 	public static void main(String[] args) {
-		Classe cachorro = new Classe(); //chamando classe
+		Classe cachorro = new Classe("Totó",5,"Cachorro"); //chamando classe
 		Classe.QUANTIDADE_ANIMAIS++;
 		//setando atributos
 		try {
-			cachorro.setNome("Totó");
-			cachorro.setIdade(5);
-			cachorro.setEspecie("Cachorro");
 			Classe.verificarSeEstaVivo(cachorro);
 			//executando ações(métodos)
 			cachorro.dormir();

@@ -8,8 +8,14 @@ public class Classe {
 	private String nome;
 	private int idade;
 	private String especie;
-	private boolean estaVivo = true;
-	
+	private boolean estaVivo;
+	//Construtor
+	public Classe(String nome, int idade, String especie) {
+		this.nome = nome;
+		this.idade = idade;
+		this.especie = especie;
+		this.estaVivo = true;
+	}
 	//Encapsulamento
 	public String getNome() {
 		return nome;
