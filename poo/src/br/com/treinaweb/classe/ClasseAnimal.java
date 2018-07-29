@@ -1,7 +1,7 @@
 package br.com.treinaweb.classe;
 
 //Classe exemplo animal - abstrata - apenas base para as outras
-public abstract class ClasseAnimal {
+public abstract class ClasseAnimal implements InterfaceAnimal{
 	
 	//Atributos
 	static public int QUANTIDADE_ANIMAIS = 0;//atribitos estáticos devem ser escritos em uppercase
@@ -43,23 +43,29 @@ public abstract class ClasseAnimal {
 	}
 	
 	//Métodos
+	@Override
 	public String crescer() {
 		return nome +" está crescendo..";
 	}
+	@Override
 	public void dormir() {
 		System.out.println(nome+" está dormindo..");
 	}
+	@Override
 	public void comer() {
 		System.out.println(nome+" está comendo..");
 	}
+	@Override
 	public void morrer() {
 		estaVivo = false;
 		System.out.println(nome+" infelizmente morreu.");
 	}
 	//sobrecarga de métodos
+	@Override
 	public final void emitirBarulho() { //Não pode ser sobrescrevido
 		System.out.println("Barulho do animal: BARULHO");
 	}
+	@Override
 	public void emitirBarulho(String barulho) {
 		System.out.println("Barulho do animal: "+barulho);
 	}
@@ -69,5 +75,6 @@ public abstract class ClasseAnimal {
 		System.out.println(animal.isEstaVivo()?animal.getNome()+" está vivo":"Infelizmente "+animal.getNome()+" morreu.");
 	}
 	//obrigada classes filhas implementar o método correr
+	@Override
 	public abstract void correr();
 }
