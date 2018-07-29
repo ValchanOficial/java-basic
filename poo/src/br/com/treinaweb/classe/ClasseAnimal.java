@@ -7,8 +7,8 @@ public class ClasseAnimal {
 	static public int QUANTIDADE_ANIMAIS = 0;//atribitos estáticos devem ser escritos em uppercase
 	private String nome;
 	private int idade;
-	private String especie;
-	private boolean estaVivo;
+	private String especie; //private apenas a classe que é dona que possui acesso
+	protected boolean estaVivo; //protected apenas classes filhas possuem acesso
 	//Construtor
 	public ClasseAnimal(String nome, int idade, String especie) {
 		this.nome = nome;

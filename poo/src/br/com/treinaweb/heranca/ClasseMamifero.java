@@ -11,6 +11,9 @@ public class ClasseMamifero extends ClasseAnimal{
 		this.tamanhoDaCauda = tamanhoDaCauda;
 	}
 	public double getTamanhoDaCauda() {
+		if(tamanhoDaCauda == 0) {
+			this.estaVivo = false;//utilizando atributo protected
+		}
 		return tamanhoDaCauda;
 	}
 	public void setTamanhoDaCauda(double tamanhoDaCauda) {
