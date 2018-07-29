@@ -4,6 +4,7 @@ package br.com.treinaweb.classe;
 public class Classe {
 	
 	//Atributos
+	static public int QUANTIDADE_ANIMAIS = 0;//atribitos estáticos devem ser escritos em uppercase
 	private String nome;
 	private int idade;
 	private String especie;
@@ -34,6 +35,7 @@ public class Classe {
 	public boolean isEstaVivo() {
 		return estaVivo;
 	}
+	
 	//Métodos
 	public String crescer() {
 		return nome +" está crescendo..";
@@ -47,5 +49,9 @@ public class Classe {
 	public void morrer() {
 		estaVivo = false;
 		System.out.println(nome+" infelizmente morreu.");
+	}
+	static public void verificarSeEstaVivo(Classe animal) {
+		//operador ternário
+		System.out.println(animal.isEstaVivo()?animal.getNome()+" está vivo":"Infelizmente "+animal.getNome()+" morreu.");
 	}
 }
