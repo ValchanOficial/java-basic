@@ -1,7 +1,7 @@
 package br.com.treinaweb.classe;
 
-//Classe exemplo animal
-public class ClasseAnimal {
+//Classe exemplo animal - abstrata - apenas base para as outras
+public abstract class ClasseAnimal {
 	
 	//Atributos
 	static public int QUANTIDADE_ANIMAIS = 0;//atribitos estáticos devem ser escritos em uppercase
@@ -68,4 +68,6 @@ public class ClasseAnimal {
 		//operador ternário
 		System.out.println(animal.isEstaVivo()?animal.getNome()+" está vivo":"Infelizmente "+animal.getNome()+" morreu.");
 	}
+	//obrigada classes filhas implementar o método correr
+	public abstract void correr();
 }

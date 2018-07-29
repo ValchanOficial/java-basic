@@ -2,7 +2,8 @@ package br.com.treinaweb.heranca;
 
 import br.com.treinaweb.classe.ClasseAnimal;
 
-public class ClasseMamifero extends ClasseAnimal{
+//classe final não pode ser extendida
+public final class ClasseMamifero extends ClasseAnimal{
 	
 	private double tamanhoDaCauda;
 	
@@ -18,5 +19,9 @@ public class ClasseMamifero extends ClasseAnimal{
 	}
 	public void setTamanhoDaCauda(double tamanhoDaCauda) {
 		this.tamanhoDaCauda = tamanhoDaCauda;
+	}
+	@Override
+	public void correr() {
+		System.out.println("O mamífero está correndo.");
 	}	
 }

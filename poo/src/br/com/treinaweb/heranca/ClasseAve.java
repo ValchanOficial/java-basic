@@ -2,7 +2,8 @@ package br.com.treinaweb.heranca;
 
 import br.com.treinaweb.classe.ClasseAnimal;
 
-public class ClasseAve extends ClasseAnimal{
+//classe final não pode ser extendida
+public final class ClasseAve extends ClasseAnimal{
 	
 	private int quantidadeDeOvos;
 	
@@ -39,4 +40,8 @@ public class ClasseAve extends ClasseAnimal{
 	public void emitirBarulho(String barulho) {
 		System.out.println(barulho.toUpperCase());
 	}
+	@Override
+	public void correr() {
+		System.out.println("A ave está correndo.");
+	}	
 }

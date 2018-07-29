@@ -1,12 +1,13 @@
 package br.com.treinaweb.app;
 
 import br.com.treinaweb.classe.ClasseAnimal; //classe importada
+import br.com.treinaweb.heranca.ClasseMamifero;
 
 public class Programa {
 
 	public static void main(String[] args) {
-
-		ClasseAnimal cachorro = new ClasseAnimal("Totó",5,"Cachorro"); //chamando classe
+		//Não é possível instanciar mais ClasseAnimal, agora utilizada apenas para base nas outras classes.
+		ClasseMamifero cachorro = new ClasseMamifero("Totó",5,"Cachorro", 2); //chamando classe
 		ClasseAnimal.QUANTIDADE_ANIMAIS++;
 		//setando atributos
 		try {

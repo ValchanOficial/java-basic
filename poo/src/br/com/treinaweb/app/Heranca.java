@@ -1,5 +1,6 @@
 package br.com.treinaweb.app;
 
+import br.com.treinaweb.classe.ClasseAnimal;
 import br.com.treinaweb.heranca.ClasseAve;
 import br.com.treinaweb.heranca.ClasseMamifero;
 
@@ -29,6 +30,13 @@ public class Heranca {
 		
 		System.out.println("===============================");
 		tucano.emitirBarulho("ca ca"); //chamou método sobrescrito da ClasseAve
-		cachorro.emitirBarulho("au au"); //chamou método da ClasseAnimal
+		cachorro.emitirBarulho("au au"); //chamou método da ClasseAnimal	
+		System.out.println("===============================");
+		tucano.correr();
+		cachorro.correr();
+		System.out.println("===============================");
+		//polimorfismo
+		ClasseAnimal teste = new ClasseMamifero("teste", 4, "Teste", 5);
+		teste.correr();
 	}
 }
