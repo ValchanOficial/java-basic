@@ -50,6 +50,14 @@ public class Classe {
 		estaVivo = false;
 		System.out.println(nome+" infelizmente morreu.");
 	}
+	//sobrecarga de métodos
+	public void emitirBarulho() {
+		System.out.println("Barulho do animal: BARULHO");
+	}
+	public void emitirBarulho(String barulho) {
+		System.out.println("Barulho do animal: "+barulho);
+	}
+	//estático
 	static public void verificarSeEstaVivo(Classe animal) {
 		//operador ternário
 		System.out.println(animal.isEstaVivo()?animal.getNome()+" está vivo":"Infelizmente "+animal.getNome()+" morreu.");

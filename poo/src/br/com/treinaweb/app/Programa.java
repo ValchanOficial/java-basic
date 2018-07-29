@@ -16,6 +16,7 @@ public class Programa {
 			//executando ações(métodos)
 			cachorro.dormir();
 			cachorro.comer();
+			cachorro.emitirBarulho("AU AU");
 			System.out.println(cachorro.crescer());
 			cachorro.morrer();//estaVivo = false
 			System.out.println("Quantidade de animais cadastrados: "+Classe.QUANTIDADE_ANIMAIS);
