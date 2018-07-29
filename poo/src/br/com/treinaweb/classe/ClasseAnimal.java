@@ -1,7 +1,7 @@
 package br.com.treinaweb.classe;
 
 //Classe exemplo animal
-public class Classe {
+public class ClasseAnimal {
 	
 	//Atributos
 	static public int QUANTIDADE_ANIMAIS = 0;//atribitos estáticos devem ser escritos em uppercase
@@ -10,7 +10,7 @@ public class Classe {
 	private String especie;
 	private boolean estaVivo;
 	//Construtor
-	public Classe(String nome, int idade, String especie) {
+	public ClasseAnimal(String nome, int idade, String especie) {
 		this.nome = nome;
 		this.idade = idade;
 		this.especie = especie;
@@ -57,14 +57,14 @@ public class Classe {
 		System.out.println(nome+" infelizmente morreu.");
 	}
 	//sobrecarga de métodos
-	public void emitirBarulho() {
+	public final void emitirBarulho() { //Não pode ser sobrescrevido
 		System.out.println("Barulho do animal: BARULHO");
 	}
 	public void emitirBarulho(String barulho) {
 		System.out.println("Barulho do animal: "+barulho);
 	}
 	//estático
-	static public void verificarSeEstaVivo(Classe animal) {
+	static public void verificarSeEstaVivo(ClasseAnimal animal) {
 		//operador ternário
 		System.out.println(animal.isEstaVivo()?animal.getNome()+" está vivo":"Infelizmente "+animal.getNome()+" morreu.");
 	}

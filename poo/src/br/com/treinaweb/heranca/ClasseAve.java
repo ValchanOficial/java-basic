@@ -1,8 +1,8 @@
 package br.com.treinaweb.heranca;
 
-import br.com.treinaweb.classe.Classe;
+import br.com.treinaweb.classe.ClasseAnimal;
 
-public class ClasseAve extends Classe{
+public class ClasseAve extends ClasseAnimal{
 	
 	private int quantidadeDeOvos;
 	
@@ -15,5 +15,28 @@ public class ClasseAve extends Classe{
 	}
 	public void setQuantidadeDeOvos(int quantidadeDeOvos) {
 		this.quantidadeDeOvos = quantidadeDeOvos;
-	}	
+	}
+	//sobrescrevendo o método toString de Object
+	@Override
+	public String toString() {
+		return "Nome: "+this.getNome()+"; Espécie: "+this.getEspecie()+".";
+	}
+	//retorna a comparação entre valores
+	@Override
+	public boolean equals(Object obj) {
+		ClasseAve aveDois = (ClasseAve)obj;
+		return this.getNome().equals(aveDois.getNome()) &&
+				this.getEspecie().equals(aveDois.getEspecie())&&
+				this.getIdade()==aveDois.getIdade()&&
+				this.getQuantidadeDeOvos()==aveDois.getQuantidadeDeOvos();
+	}
+	@Override
+	public int hashCode() {
+		return super.hashCode();
+	}
+	//Override no método da ClasseAnimal
+	@Override
+	public void emitirBarulho(String barulho) {
+		System.out.println(barulho.toUpperCase());
+	}
 }

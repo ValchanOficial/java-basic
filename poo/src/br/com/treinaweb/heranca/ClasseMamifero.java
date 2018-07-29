@@ -1,8 +1,8 @@
 package br.com.treinaweb.heranca;
 
-import br.com.treinaweb.classe.Classe;
+import br.com.treinaweb.classe.ClasseAnimal;
 
-public class ClasseMamifero extends Classe{
+public class ClasseMamifero extends ClasseAnimal{
 	
 	private double tamanhoDaCauda;
 	

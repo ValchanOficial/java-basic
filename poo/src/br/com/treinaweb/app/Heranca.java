@@ -16,12 +16,19 @@ public class Heranca {
 		}
 		
 		ClasseAve tucano = new ClasseAve("Tucky", 2, "Tucano", 5);
+		ClasseAve tucanoDois = new ClasseAve("Tucky", 2, "Tucano", 5);
+		System.out.println(tucano.equals(tucanoDois));//Comparando
+		System.out.println(tucano.toString());
 		try {
 			tucano.comer();
 			tucano.dormir();
 			System.out.println(tucano.crescer());
 		}catch(Exception e){
 			e.printStackTrace();
-		}		
+		}	
+		
+		System.out.println("===============================");
+		tucano.emitirBarulho("ca ca"); //chamou método sobrescrito da ClasseAve
+		cachorro.emitirBarulho("au au"); //chamou método da ClasseAnimal
 	}
 }
