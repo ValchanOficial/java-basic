@@ -1,6 +1,9 @@
 package br.com.treinaweb.app;
 
+import java.util.List;
+
 import br.com.treinaweb.classe.ClasseAnimal;
+import br.com.treinaweb.generic.ManipuladorAnimais;
 import br.com.treinaweb.heranca.ClasseAve;
 import br.com.treinaweb.heranca.ClasseMamifero;
 
@@ -38,5 +41,17 @@ public class Heranca {
 		//polimorfismo
 		ClasseAnimal teste = new ClasseMamifero("teste", 4, "Teste", 5);
 		teste.correr();
+		System.out.println("===============================");
+		//manipulador
+		ManipuladorAnimais<ClasseAve> manipuladorAnimais = new ManipuladorAnimais<ClasseAve>();
+		ClasseAve ave = new ClasseAve("Ara", 3, "Arara", 5);
+		System.out.println("Inseri a ave.");
+		manipuladorAnimais.inserirAnimal(ave);
+		ClasseAve aveRecuperada = manipuladorAnimais.getPorPosicao(0);
+		System.out.println("Ave recuperada: "+ aveRecuperada.getNome());
+		List<ClasseAve> aves = manipuladorAnimais.getAnimais();
+		for(ClasseAve a: aves) {
+			System.out.println("Ave recuperada: "+ a.getNome());
+		}
 	}
 }
