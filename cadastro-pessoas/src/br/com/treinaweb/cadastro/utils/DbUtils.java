@@ -19,12 +19,12 @@ public class DbUtils {
 		return connection;
 	}
 	//SELECT
-	public static ResultSet executeSelect(Connection con,String sql) throws SQLException {
+	public static ResultSet getResultSet(Connection con,String sql) throws SQLException {
 		Statement query = con.createStatement();
 		return query.executeQuery(sql);
 	}
 	//INSERT, UPDATE, DELETE
-	public static PreparedStatement criarPreparedStatement(Connection con,String sql) throws SQLException {
+	public static PreparedStatement getPreparedStatement(Connection con,String sql) throws SQLException {
 		return con.prepareStatement(sql);
 	}
 }
