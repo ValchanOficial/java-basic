@@ -25,7 +25,7 @@ Curso da [TreinaWeb](https://www.treinaweb.com.br/): Java Básico.
  - Classes;
  - Programação concorrente;
  - Trabalhando com arquivos;
- - Servidor MySQL;
+ - Servidor [MySQL](https://www.mysql.com/);
  - Banco de dados no Java;
  - Introdução ao Swing;
  - Trabalhando com eventos.
