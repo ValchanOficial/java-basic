@@ -51,8 +51,8 @@ public class Programa {
 		botao.setBounds(280,10,100,20);
 		BotaoProcessarEventoClique eventoClique = new BotaoProcessarEventoClique(campo); //Listener implementado com classe
 		botao.addActionListener(eventoClique);//vincula botão ao evento
-		
 		panel.add(botao);
+		
 		frame.add(panel);	
 		frame.setVisible(true);	//visibilidade da tela	
 	}
